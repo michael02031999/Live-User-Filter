@@ -139,6 +139,13 @@ async function getRandomUser() {
 
     console.log(matches.length);
 
+    if (matches.length == 0) {
+      personContainer.style.height = "0px";
+    } else {
+      personContainer.style.height = "fit-content";
+      personContainer.style.maxHeight = "390px";
+    }
+
     let arrayOfIndices = [];
 
     let indexNum;
