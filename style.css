@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(248, 249, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+#container {
+  /* height: 550px; */
+  width: 300px;
+  /*  border: 2.5px solid black; */
+}
+
+#searchbar {
+  background-color: rgb(62, 87, 219);
+  color: white;
+  height: 160px;
+  font-size: 16px;
+}
+
+#titleSubtitle {
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#subtitle {
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+#actualSearchbar {
+  display: block;
+  margin: 0 auto;
+  height: 35px;
+  width: 90%;
+  border-radius: 25px;
+  border: none;
+  padding: 15px;
+}
+
+#actualSearchbar::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#actualSearchbar:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  background-color: rgb(43, 60, 152);
+  color: white;
+}
+
+#personContainer {
+  overflow: scroll;
+  /*   height: 390px; */
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.gone {
+  display: none;
+}
+
+.back {
+  display: flex;
+}
+
+.boxStyle {
+  width: 100%;
+  height: 95px;
+
+  padding: 0px;
+  padding-top: 17.5px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.loading {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.nameLocation {
+  height: 55px;
+}
